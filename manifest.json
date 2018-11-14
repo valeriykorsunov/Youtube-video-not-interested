@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name":"SbisParser",
-    "version": "1.0.07",
+    "name":"YVNI",
+    "version": "1.0.1",
     "background": 
     {
         "scripts": [ "js/bg.js" ]
@@ -9,7 +9,7 @@
       //"page_action":
     "browser_action":
     {      
-        "default_title": "Sbis парсер",
+        "default_title": "Youtube - для рекомендоанного",
         "default_icon": "icon/16.png" //,
         //"default_popup": "popup.html"
     },
