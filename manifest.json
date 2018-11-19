@@ -1,32 +1,31 @@
 {
     "manifest_version": 2,
     "name":"YVNI",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "background": 
     {
-        "scripts": [ "js/bg.js" ]
+		"scripts": [ "js/bg.js" ]
     },
-      //"page_action":
     "browser_action":
     {      
-        "default_title": "Youtube - для рекомендоанного",
-        "default_icon": "icon/16.png" //,
-        //"default_popup": "popup.html"
+        "default_title": "Youtube - удалить видео из рекомендованного в 2 клика",
+        "default_icon": "icon/32.png"
     },
     "permissions": 
     [      
         "tabs",
         "activeTab",
-        "https://www.youtube.com/*",
+        "https://www.youtube.com/*"
     ],
     "icons" :  {
-          "16" :  "icon/16.png",
+          "16" :  "icon/32.png",
           "48" :  "icon/48.png",
           "128" : "icon/128.png"
-        },
+		},
     "content_scripts":
     [{       
         "matches": ["https://www.youtube.com/*"],
-        "js": ["js/jq.js","js/code.js"]
+        "js": ["js/jq.js","js/code.js"],
+        "css": [ "styles/commentblocker.css" ]
     }]
 }
