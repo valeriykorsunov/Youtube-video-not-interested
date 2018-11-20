@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.delall,.remthis{
+    background-color:#008bec;
+    color:#fff;cursor:pointer;
+    font-size:12px;
+    padding:2px 7px;
+    z-index:2000;
+}
+.delall{
+    margin:1px;
+    float:right;
+}
+.remthis{
+    margin:5px;
+    position:absolute;
+    display:block;
+}
+.delall:hover,.remthis:hover{
+    background-color:#cb4437;
+}
